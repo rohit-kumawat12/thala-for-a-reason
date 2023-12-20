@@ -40,7 +40,7 @@ function Box(){
         const isAllNumbers = /^\d+$/.test(inputText);
 
         if(inputText===''){
-            setBordercolor('blue');
+            setBordercolor('red');
             return;
         }
         setBordercolor('');
