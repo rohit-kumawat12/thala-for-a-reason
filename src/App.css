@@ -4,11 +4,13 @@
   justify-content: center;
   min-width: 100vw;
   min-height: 100vh;
+  background-color: white;
   background-image: url('./image/img7.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+  z-index: 1;
 }
 
 .mainContainer::before{

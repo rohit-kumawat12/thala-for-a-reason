@@ -40,7 +40,7 @@ function Box(){
         const isAllNumbers = /^\d+$/.test(inputText);
 
         if(inputText===''){
-            setBordercolor('red');
+            setBordercolor('blue');
             return;
         }
         setBordercolor('');
@@ -58,7 +58,7 @@ function Box(){
         temp = numberString+` = ${sum}`;
         if(sum===7){
             setYesno(0);
-            imageBox1[0].style.zIndex = '1';
+            imageBox1[0].style.zIndex = '2';
             imageBox2[0].style.zIndex = '-1';
             
             document.getElementById('songBolejo').play();
@@ -66,7 +66,7 @@ function Box(){
         }else{
             setYesno(1);
             imageBox1[0].style.zIndex = '-1';
-            imageBox2[0].style.zIndex = '1';
+            imageBox2[0].style.zIndex = '2';
             document.getElementById('songBolejo').pause();
             document.getElementById('songMoye').play();
         }
@@ -78,7 +78,7 @@ function Box(){
         if(dhoniInputText==='dhoni' || dhoniInputText==='mahendra singh dhoni' || dhoniInputText==='mahendrasinghdhoni'){
             setResulttext(inputText);
             setYesno(0);
-            imageBox1[0].style.zIndex = '1';
+            imageBox1[0].style.zIndex = '2';
             imageBox2[0].style.zIndex = '-1';
             document.getElementById('songBolejo').play();
             document.getElementById('songMoye').pause();
@@ -88,7 +88,7 @@ function Box(){
             if(inputTextWithoutSpaces.length===7){
                 temp = inputText+`(${inputTextWithoutSpaces.length} letters)`;
                 setYesno(0);
-                imageBox1[0].style.zIndex = '1';
+                imageBox1[0].style.zIndex = '2';
                 imageBox2[0].style.zIndex = '-1';
                 document.getElementById('songBolejo').play();
                 document.getElementById('songMoye').pause();
@@ -96,7 +96,7 @@ function Box(){
                 temp = inputText+`(${inputTextWithoutSpaces.length} letter)`;
                 setYesno(1);
                 imageBox1[0].style.zIndex = '-1';
-                imageBox2[0].style.zIndex = '1';
+                imageBox2[0].style.zIndex = '2';
                 document.getElementById('songBolejo').pause();
                 document.getElementById('songMoye').play();
             }
@@ -108,7 +108,7 @@ function Box(){
             if(inputTextWithoutSpaces.length===7){
                 output = output+` = ${inputTextWithoutSpaces.length}`;
                 setYesno(0);
-                imageBox1[0].style.zIndex = '1';
+                imageBox1[0].style.zIndex = '2';
                 imageBox2[0].style.zIndex = '-1';
                 document.getElementById('songBolejo').play();
                 document.getElementById('songMoye').pause();
@@ -116,7 +116,7 @@ function Box(){
                 output = output+` = ${inputTextWithoutSpaces.length}`;
                 setYesno(1);
                 imageBox1[0].style.zIndex = '-1';
-                imageBox2[0].style.zIndex = '1';
+                imageBox2[0].style.zIndex = '2';
                 document.getElementById('songBolejo').pause();
                 document.getElementById('songMoye').play();
             }
